@@ -16,7 +16,7 @@ export default function Success() {
   const cartItems = useAppSelector((state) => state.cart.items);
 
   // This function is now triggered on form submission.
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     // You can perform validation here if necessary.
